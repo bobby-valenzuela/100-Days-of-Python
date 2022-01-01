@@ -17,6 +17,7 @@ names = names_string.split(", ")
 #Write your code below this line 👇
 import random
 
+# person_who_will_pay = random.choice(name) --> A non-manual solution
 last_idx = len(names) - 1
 rand_idx = random.randint(0, last_idx)
 print(f"{names[rand_idx]} is going to buy the meal today!")
