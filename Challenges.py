@@ -80,5 +80,12 @@ def interleave(s1, s2):
     return ''.join([tup[0] + tup[1] for tup in list(zip(s1,s2))])
 
 
+#'Write a function called triple_and_filter. This function should accept a list of numbers, filter out every number that is not divisible by 4, and return a new list where every remaining number is tripled.'
+def triple_and_filter(nums):
+    return [x * 3 for x in filter(lambda n: n % 4 == 0 ,nums)]
 
 
+# 'Write a function called extract_full_name. This function should accept a list of dictionaries and return a new list of strings with the first and last name keys in each dictionary concatenated.'
+def extract_full_name(dicts):
+    return ['{} {}'.format(user['first'],user['last']) for user in dicts]
+    # Using Map -> return list(map(lambda val: "{} {}".format(val['first'], val['last']), l))
